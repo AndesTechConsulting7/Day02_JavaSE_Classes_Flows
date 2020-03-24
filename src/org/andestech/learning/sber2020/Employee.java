@@ -31,6 +31,7 @@ public class Employee {
          this.id = id;
          this.name = name;
         this.sname = sname;
+        manager = employee;
         System.out.println("+++ ctor2: " + this);
     }
 

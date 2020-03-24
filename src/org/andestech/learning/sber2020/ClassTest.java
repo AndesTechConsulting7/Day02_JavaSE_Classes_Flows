@@ -36,9 +36,13 @@ public class ClassTest {
         Customer customer3 = new Customer("Kate","Spy");
         customer3.printCusomer();
 
-        //-------------------
+       //  Employee --------
+        Employee emp1 = new Employee(100,"The", "Boss", null);
+        Employee emp2 = new Employee(201,"The", "Operator", emp1);
+        Employee emp3 = new Employee(202,"Jannet", "Barlow", emp1);
 
-      //  Employee
+        System.out.println( emp2.manager.sname );
+
 
 
     }
