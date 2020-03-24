@@ -36,6 +36,10 @@ public class ClassTest {
         Customer customer3 = new Customer("Kate","Spy");
         customer3.printCusomer();
 
+        //-------------------
+
+      //  Employee
+
 
     }
 

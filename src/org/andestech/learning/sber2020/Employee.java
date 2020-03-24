@@ -16,18 +16,18 @@ import java.util.Random;
 public class Employee {
     long id;
     String name, sname;
-    Employee manager;
+    Employee manager= null;
 
     public Employee(){
-        this(11,"Default","Default");
+        this(11,"Default","Default", null);
      }
 
-    public Employee(String name, String sname){
-        this(0,name,sname);
+    public Employee(String name, String sname, Employee employee){
+        this(0,name,sname,employee);
         id = new Random().nextInt(2_000_000_000);
     }
 
-     public Employee(int id, String name, String sname){
+     public Employee(int id, String name, String sname, Employee employee){
          this.id = id;
          this.name = name;
         this.sname = sname;
