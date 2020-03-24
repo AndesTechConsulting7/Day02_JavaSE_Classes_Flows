@@ -1,6 +1,7 @@
 package org.andestech.learning.sber2020;
 
 import java.util.Random;
+//import java.lang.*;
 
 public class Customer {
     long id;
@@ -27,7 +28,8 @@ public class Customer {
         this(0,name,sname);
         // DB query
         // generator & verify
-        id = (new Random()).nextInt();
+        id = new Random().nextInt(2_000_000_000);
+        id = Math.abs( new Random().nextInt() );
 
     }
 
