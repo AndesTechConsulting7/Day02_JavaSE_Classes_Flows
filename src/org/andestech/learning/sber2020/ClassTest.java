@@ -2,7 +2,9 @@ package org.andestech.learning.sber2020;
 
 // class_test
 public class ClassTest {
-    public static  void main(String[] args)
+
+
+    public static void main(String[] args)
     {
         int a;
         Rocket rocket1;
@@ -15,8 +17,19 @@ public class ClassTest {
 
         rocket1.printInfo();
         //System.out.println("m= " + rocket1.mass + ", p=" + rocket1.power);
-
         // rocket1 == ref to object
 
+        new Customer();
+
+       Customer customer = new Customer();
+       customer.id = 12217890722L;
+       customer.name = "Василий";
+       customer.sname = "Петров";
+
+       customer.printCusomer();
+
     }
+
+
+
 }
