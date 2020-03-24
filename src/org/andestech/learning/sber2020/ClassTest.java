@@ -19,7 +19,7 @@ public class ClassTest {
         //System.out.println("m= " + rocket1.mass + ", p=" + rocket1.power);
         // rocket1 == ref to object
 
-        new Customer();
+       new Customer();
 
        Customer customer = new Customer();
        customer.id = 12217890722L;
@@ -27,6 +27,15 @@ public class ClassTest {
        customer.sname = "Петров";
 
        customer.printCusomer();
+        System.out.println("customer: " + customer);
+
+       //-------------------
+        Customer customer2 = new Customer(12222,"Peter","The First");
+        customer2.printCusomer();
+
+        Customer customer3 = new Customer("Kate","Spy");
+        customer3.printCusomer();
+
 
     }
 
